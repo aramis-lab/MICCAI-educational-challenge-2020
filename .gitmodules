@@ -1,0 +1,4 @@
+[submodule "Notebooks-AD-DL"]
+	path = Notebooks-AD-DL
+	url = git@github.com:aramis-lab/Notebooks-AD-DL.git
+	branch = master
