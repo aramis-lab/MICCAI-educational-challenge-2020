@@ -1,0 +1,11 @@
+# Book settings
+title: Example of Jupyter Book for Clinica
+author: The Aramis Team
+logo: 'images/logo1.png'
+
+latex:
+  latex_documents:
+    targetname: book.tex
+launch_buttons:
+  jupyterhub_url: "localhost:8080"  # The URL for your JupyterHub. (e.g., https://datahub.berkeley.edu)
+    
