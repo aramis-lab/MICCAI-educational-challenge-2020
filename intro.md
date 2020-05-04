@@ -1,12 +1,12 @@
-# T1 MRI Classification using Deep Learning
+# MRI Classification with DL
 
-This tutorial will show necessary steps to run succesfully image classificaiton
+This tutorial will show necessary steps to succesfully run classificaiton
 of T1 MRI using [Clinica](http://www.clinica.run) and
 [clinicadl](https://github.com/aramis-lab/ad-dl).
 
 This Jupyter Book is divided in five sections:
 
-- Getting the database and short description.
+- Getting the database and short description of its content.
 
 - Preprocessing the data with the `clinica T1_Linear` pipeline.
 
@@ -29,7 +29,14 @@ The local environment to execute the notebooks can be installed using
 miniconda. Please follow instructions
 [here](https://docs.conda.io/en/latest/miniconda.html) to install this tool.
 
-The Python required library are :
+Once Conda is installed, create an environment with all the dependencies.
+*Warning*: It's strongly recommended to use a computer with at least one GPU
+card, specially it you want to train your own model. 
+
+For the preprocessing stage, you must install this software previously:
+[ANTs](http://stnava.github.io/ANTs/).
+
+The Python's required libraries are :
 
 - pytorch
 - clinica
