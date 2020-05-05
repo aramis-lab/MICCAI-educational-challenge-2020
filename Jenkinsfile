@@ -86,5 +86,3 @@ pipeline {
       }
     }
   }
-              stash(name: 'doc_html', includes: '_build/html/**')
-              stash(name: 'doc_html', includes: '_build/html/**')
