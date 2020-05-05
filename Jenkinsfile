@@ -55,21 +55,21 @@ pipeline {
         }
       }
       stage('Deploy') {
-        parallel {
-          stage('Deply in webserver') {
-            agent { label 'linux' }
-            environment {
-              PATH = "$HOME/miniconda/bin:$PATH"
-              }
-            steps {
-              echo 'Deploying in webserver...'
-              sh 'echo "Agent name: ${NODE_NAME}"'
-              unstash(name: 'doc_html')
-              sh '''#!/usr/bin/env bash
-                 set +x
-                 scp -r _build/html aramislab.paris.inria.fr:~/jupyterbook/ 
-                 '''
+        stage('Deploy in webserver') {
+          agent { label 'linux' }
+          environment {
+            PATH = "$HOME/miniconda/bin:$PATH"
             }
+          steps {
+            echo 'Deploying in webserver...'
+            sh 'echo "Agent name: ${NODE_NAME}"'
+            unstash(name: 'doc_html')
+            sh '''#!/usr/bin/env bash
+               set +x
+               ls ./
+               scp -r _build/html aramislab.paris.inria.fr:~/jupyterbook/ 
+               '''
+            echo 'Finish uploading artifacts'   
           }
         }
       }
