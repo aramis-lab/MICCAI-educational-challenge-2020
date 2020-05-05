@@ -44,6 +44,7 @@ pipeline {
               sh 'echo "Agent name: ${NODE_NAME}"'
               sh '''#!/usr/bin/env bash
                  set +x
+                 git submodule update --init --recursive
                  source $WORKSPACE/../../miniconda/etc/profile.d/conda.sh
                  conda activate clinicadl_course
                  jupyter-book build .
