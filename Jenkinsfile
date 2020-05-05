@@ -67,8 +67,7 @@ pipeline {
               unstash(name: 'doc_html')
               sh '''#!/usr/bin/env bash
                  set +x
-                 pwd
-                 ls 
+                 ls _build/html/ 
                  '''
             }
           }
@@ -83,3 +82,5 @@ pipeline {
       }
     }
   }
+              stash(name: 'doc_html', includes: '_build/html/**')
+              stash(name: 'doc_html', includes: '_build/html/**')
