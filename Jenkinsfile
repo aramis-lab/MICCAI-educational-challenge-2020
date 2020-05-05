@@ -40,7 +40,7 @@ pipeline {
               PATH = "$HOME/miniconda/bin:$PATH"
               }
             steps {
-              archiveArtifacts artifatcs: '_build/*'
+              archiveArtifacts artifacts: '_build/*'
               echo 'Building Jupyter-book...'
               sh 'echo "Agent name: ${NODE_NAME}"'
               sh '''#!/usr/bin/env bash
