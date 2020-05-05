@@ -40,7 +40,6 @@ pipeline {
               PATH = "$HOME/miniconda/bin:$PATH"
               }
             steps {
-              archiveArtifacts artifacts: '_build/*'
               echo 'Building Jupyter-book...'
               sh 'echo "Agent name: ${NODE_NAME}"'
               sh '''#!/usr/bin/env bash
@@ -49,6 +48,27 @@ pipeline {
                  conda activate clinicadl_course
                  jupyter-book build .
                  conda deactivate
+                 '''
+              stash(name: 'doc_html', includes: '_build/html/**')
+            }
+          }
+        }
+      }
+      stage('Deploy') {
+        parallel {
+          stage('Deply in webserver') {
+            agent { label 'linux' }
+            environment {
+              PATH = "$HOME/miniconda/bin:$PATH"
+              }
+            steps {
+              echo 'Deploying in webserver...'
+              sh 'echo "Agent name: ${NODE_NAME}"'
+              unstash(name: 'doc_html')
+              sh '''#!/usr/bin/env bash
+                 set +x
+                 pwd
+                 ls 
                  '''
             }
           }
