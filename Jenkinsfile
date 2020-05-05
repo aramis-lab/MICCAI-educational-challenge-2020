@@ -67,7 +67,7 @@ pipeline {
               unstash(name: 'doc_html')
               sh '''#!/usr/bin/env bash
                  set +x
-                 ls _build/html/ 
+                 scp -r _build/html aramislab.paris.inria.fr:~/jupyterbook/ 
                  '''
             }
           }
