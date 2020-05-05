@@ -38,6 +38,7 @@ pipeline {
             agent { label 'linux' }
             environment {
               PATH = "$HOME/miniconda/bin:$PATH"
+              GIT_SSH_COMMAND = 'ssh -i /builds/.ssh/github_idrsa'
               }
             steps {
               echo 'Building Jupyter-book...'
