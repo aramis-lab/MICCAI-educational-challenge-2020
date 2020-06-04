@@ -3,10 +3,12 @@ title: T1 MRI classification using **clinicadl**
 sections:
 - file: Notebooks-AD-DL/dataset
   title: The dataset
+- file: Notebooks-AD-DL/tsvtools
+  title: Tools for tsv extraction
 - file: Notebooks-AD-DL/preprocessing
   title: Preprocessing the dataset
 - file: Notebooks-AD-DL/extract
-  title: Prepare dataset to Pytorch format 
+  title: Prepare dataset to Pytorch format
 - file: Notebooks-AD-DL/inference
   title: MRI classification with pretrained models
 - file: Notebooks-AD-DL/training
