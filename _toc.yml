@@ -10,6 +10,6 @@ sections:
 - file: Notebooks-AD-DL/extract
   title: Prepare dataset to Pytorch format
 - file: Notebooks-AD-DL/inference
-  title: MRI classification with pretrained models
+  title: MRI classification using pretrained models
 - file: Notebooks-AD-DL/training
   title: How to train your own model ?
