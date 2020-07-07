@@ -49,6 +49,7 @@ pipeline {
                  source $WORKSPACE/../../miniconda/etc/profile.d/conda.sh
                  conda activate clinicadl_course
                  jupyter-book build .
+                 cp -r Notebooks-AD-DL/images _build/html/Notebooks-AD-DL/
                  conda deactivate
                  '''
               stash(name: 'doc_html', includes: '_build/html/**')
