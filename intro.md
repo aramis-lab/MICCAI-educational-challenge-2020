@@ -1,18 +1,18 @@
-# MRI Classification with DL
+# MRI Classification
 
-This tutorial will show necessary steps to succesfully run classificaiton
-of T1 MRI using [Clinica](http://www.clinica.run) and
+This tutorial shows the  necessary steps to succesfully run automatic T1 MRI
+classification of T1 MRI using [Clinica](http://www.clinica.run) and
 [clinicadl](https://github.com/aramis-lab/ad-dl).
 
-This Jupyter Book is divided in five sections:
+To achieve this, this Jupyter Book is divided into the following sections:
 
-- Getting the database and short description of its content.
+- Generating a test database.
 
 - Preprocessing the data with the `clinica T1_Linear` pipeline.
 
 - Prepare T1 MRI images for Deep Learning models.
 
-- Classify T1 MRI  using precomputed CNN models and **clinicadl**.
+- Classify T1 MRI using precomputed CNN models and **clinicadl**.
 
 - Train your own CNN models (optional).
 
