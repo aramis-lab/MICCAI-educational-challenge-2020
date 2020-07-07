@@ -46,6 +46,7 @@ pipeline {
               sh '''#!/usr/bin/env bash
                  set +x
                  git submodule update --init --recursive
+                 git pull --recurse-submodules
                  source $WORKSPACE/../../miniconda/etc/profile.d/conda.sh
                  conda activate clinicadl_course
                  jupyter-book build .
