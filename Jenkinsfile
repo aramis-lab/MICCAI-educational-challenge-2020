@@ -24,7 +24,7 @@ pipeline {
                  source $WORKSPACE/../../miniconda/etc/profile.d/conda.sh
                  conda create --clone clinicadl_env --name clinicadl_course
                  conda activate clinicadl_course
-                 conda installl jupyter
+                 conda install jupyter
                  pip install -U jupyter-book==0.7.0b2
                  conda deactivate
                  '''
