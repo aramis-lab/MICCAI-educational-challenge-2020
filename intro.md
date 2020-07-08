@@ -8,7 +8,7 @@ To achieve this, the present Jupyter Book is divided into the following sections
 
 - [Description of the test datasets](Notebooks-AD-DL/dataset).
 
-- [Spliting the dataset](Notebooks-AD-DL/label_extraction)
+- [Spliting the dataset](Notebooks-AD-DL/label_extraction).
 
 - [Preprocessing the data using Clinica's pipeline](Notebooks-AD-DL/preprocessing).
 
@@ -21,7 +21,7 @@ To achieve this, the present Jupyter Book is divided into the following sections
 Each of these sections can be download as a notebook (a mix of text and code)
 that can be executed locally in your computer or it can be run in a
 "cloud" instance (e.g. you don't have a GPU available in your computer).
-In the former case, links to instances of Google colab are displayed.
+In the former case, links to instances of Google Colab are displayed.
 
 If you want to test the local version of the notebooks, please verify that 
 you have installed the correct notebook environment.
@@ -41,9 +41,7 @@ For the preprocessing stage, you must install this software previously:
 
 The Python's required libraries are :
 
-- pytorch
-- clinica
-- clinicadl
+- PyTorch
+- Clinica
+- Clinicadl
 - jupyter-notebook
-
-
