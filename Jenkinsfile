@@ -24,7 +24,7 @@ pipeline {
                  source $WORKSPACE/../../miniconda/etc/profile.d/conda.sh
                  conda create --clone clinicadl_env --name clinicadl_course
                  conda activate clinicadl_course
-                 conda installl jupyter
+                 conda install jupyter
                  pip install -U jupyter-book==0.7.0b2
                  conda deactivate
                  '''
@@ -46,9 +46,11 @@ pipeline {
               sh '''#!/usr/bin/env bash
                  set +x
                  git submodule update --init --recursive
+                 git pull --recurse-submodules
                  source $WORKSPACE/../../miniconda/etc/profile.d/conda.sh
                  conda activate clinicadl_course
                  jupyter-book build .
+                 cp -r Notebooks-AD-DL/images _build/html/Notebooks-AD-DL/
                  conda deactivate
                  '''
               stash(name: 'doc_html', includes: '_build/html/**')
