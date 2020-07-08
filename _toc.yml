@@ -4,7 +4,7 @@ sections:
 - file: Notebooks-AD-DL/dataset
   title: The dataset
 - file: Notebooks-AD-DL/label_extraction
-  title: Tools for tsv extraction
+  title: Definition of the training, validation and test cohorts
 - file: Notebooks-AD-DL/preprocessing
   title: Preprocessing the dataset
 - file: Notebooks-AD-DL/extract
