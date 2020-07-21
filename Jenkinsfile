@@ -15,15 +15,16 @@ pipeline {
                }
             //when { changeset "requirements.txt" }   
             steps {
-              echo 'Clone conda environment where clinicadl is installed...'
+              echo 'Install clinicadl in a clean environment...'
               echo 'My branch name is ${BRANCH_NAME}'
               sh 'echo "My branch name is ${BRANCH_NAME}"'
               sh 'echo "Agent name: ${NODE_NAME}"'
               sh '''#!/usr/bin/env bash
                  set +x
                  source $WORKSPACE/../../miniconda/etc/profile.d/conda.sh
-                 conda create --clone clinicadl_env --name clinicadl_course
+                 conda create -y -n clinicadl_course python=3.7
                  conda activate clinicadl_course
+                 pip install clinicadl==0.0.2b2
                  conda install jupyter
                  pip install -U jupyter-book==0.7.0b2
                  conda deactivate
