@@ -6,15 +6,13 @@ classification of T1 MRI using [Clinica](http://www.clinica.run) and
 
 To achieve this, the present Jupyter Book is divided into the following sections:
 
-- [Description of the test datasets](Notebooks-AD-DL/dataset).
+- [Description of dementia study context](Notebooks-AD-DL/dataset).
 
-- [Spliting the dataset](Notebooks-AD-DL/label_extraction).
-
-- [Preprocessing the data using Clinica's pipeline](Notebooks-AD-DL/preprocessing).
-
-- [Prepare T1 MRI images for Deep Learning models](Notebooks-AD-DL/extract).
+- [Prepare raw neuroimaging datasets for Deep Learning models](Notebooks-AD-DL/preprocessing).
 
 - [Classify T1 MRI using precomputed CNN models and **clinicadl**](Notebooks-AD-DL/inference).
+
+- [Defining the labels and validation procedures for classification](Notebooks-AD-DL/label_extraction).
 
 - [Train your own CNN models (optional)](Notebooks-AD-DL/training).
 
@@ -23,7 +21,7 @@ that can be executed locally in your computer or it can be run in a
 "cloud" instance (e.g. you don't have a GPU available in your computer).
 In the former case, links to instances of Google Colab are displayed.
 
-If you want to test the local version of the notebooks, please verify that 
+If you want to test the local version of the notebooks, please verify that
 you have installed the correct notebook environment.
 
 ## Local execution of the notebooks
@@ -34,7 +32,7 @@ miniconda. Please follow instructions
 
 Once Conda is installed, create an environment with all the dependencies.
 *Warning*: It's strongly recommended to use a computer with at least one GPU
-card, specially it you want to train your own model. 
+card, specially it you want to train your own model.
 
 For the preprocessing stage, you must install this software previously:
 [ANTs](http://stnava.github.io/ANTs/).
