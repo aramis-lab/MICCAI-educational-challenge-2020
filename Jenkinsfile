@@ -24,7 +24,7 @@ pipeline {
                  source $WORKSPACE/../../miniconda/etc/profile.d/conda.sh
                  conda create -y -n clinicadl_course python=3.7
                  conda activate clinicadl_course
-                 pip install clinicadl==0.0.2b2
+                 pip install clinicadl==0.0.2b4
                  conda install jupyter
                  pip install -U jupyter-book==0.7.0b2
                  conda deactivate
