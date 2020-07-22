@@ -4,7 +4,7 @@ author: The Aramis Team
 logo: 'images/logo1.png'
 
 launch_buttons:
-  jupyterhub_url: "localhost:8080"  # The URL for your JupyterHub. (e.g., https://datahub.berkeley.edu)
+  #jupyterhub_url: "localhost:8080"  # The URL for your JupyterHub. (e.g., https://datahub.berkeley.edu)
   
 ######################################################################################
 # Execution settings
