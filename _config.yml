@@ -3,7 +3,7 @@ title: MRI classification using Clinica
 author: The Aramis Team
 logo: 'images/logo1.png'
 
- launch_buttons:
+launch_buttons:
   colab_url: "https://colab.research.google.com/github/aramis-lab/Notebooks-AD-DL"
    # jupyterhub_url: "localhost:8080"  # The URL for your JupyterHub. (e.g., https://datahub.berkeley.edu)
   
