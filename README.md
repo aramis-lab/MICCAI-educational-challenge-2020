@@ -12,7 +12,7 @@ Jupyter-book is automatically deployed here: https://aramislab.paris.inria.fr/cl
 
 When [Notebooks-AD-DL](https://github.com/aramis-lab/Notebooks-AD-DL) is updated, type:
 ```
-git submodule update --init --recursive
+git submodule update --remote
 ```
 to update the Jupyter-book.
 
