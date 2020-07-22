@@ -22,7 +22,7 @@ To run locally, please install the necessary packages inside a conda environment
 conda create -y -n clinicadl_tuto python=3.7
 conda activate clinicadl_tuto
 pip install numpy==1.17 jupyterlab
-pip install clinicadl=0.0.2b2
+pip install clinicadl=0.0.2b4
 ```
 
 Then, you can clone the repository containing this tutorial and lauch the notebooks from inside:
