@@ -16,3 +16,19 @@ git submodule update --remote
 ```
 to update the Jupyter-book.
 
+To run locally, please install the necessary packages inside a conda environment:
+
+```bash
+conda create -y -n clinicadl_tuto python=3.7
+conda activate clinicadl_tuto
+pip install numpy==1.17 jupyterlab
+pip install clinicadl=0.0.2b2
+```
+
+Then, you can clone the repository containing this tutorial and lauch the notebooks from inside:
+
+``` 
+git clone git@github.com:aramis-lab/MICCAI-educational-challenge-2020.git
+cd ./Notebooks-AD-DL
+jupyter notebook
+```

@@ -26,20 +26,29 @@ you have installed the correct notebook environment.
 
 ## Local execution of the notebooks
 
-The local environment to execute the notebooks can be installed using
-miniconda. Please follow instructions
-[here](https://docs.conda.io/en/latest/miniconda.html) to install it.
+Use Conda/miniconda to setup your local environment and to execute these
+notebooks. If the tool is not installed in your system, please follow [these
+instructions](https://docs.conda.io/en/latest/miniconda.html) to install it.
 
-Once Conda is installed, create an environment with all the dependencies.
-*Warning*: It's strongly recommended to use a computer with at least one GPU
+```warning
+It's strongly recommended to use a computer with at least one GPU
 card, specially it you want to train your own model.
+```
 
-For the preprocessing stage, you must install this software previously:
-[ANTs](http://stnava.github.io/ANTs/).
+Once Conda is installed, a good pratice consist in create a new environment from
+raw and install inside `clinicadl` and of course `jupyter notebook`:
 
-The Python's required libraries are :
+```bash
+conda create -y -n clinicadl_tuto python=3.7
+conda activate clinicadl_tuto
+pip install numpy==1.17 jupyterlab
+pip install clinicadl=0.0.2b2
+```
 
-- PyTorch
-- Clinica
-- Clinicadl
-- jupyter-notebook
+Then, you can clone the repository containing this tutorial and lauch the notebooks from inside:
+
+``` 
+git clone git@github.com:aramis-lab/MICCAI-educational-challenge-2020.git
+cd ./Notebooks-AD-DL
+jupyter notebook
+```
