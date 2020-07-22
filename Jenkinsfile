@@ -26,7 +26,7 @@ pipeline {
                  conda activate clinicadl_course
                  pip install clinicadl==0.0.2b4
                  conda install jupyter
-                 pip install -U jupyter-book==0.7.0b2
+                 pip install -U jupyter-book==0.7.1
                  conda deactivate
                  '''
             }
