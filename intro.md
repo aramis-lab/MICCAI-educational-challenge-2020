@@ -60,7 +60,7 @@ Use Conda/miniconda to setup your local environment and to execute these
 notebooks. If the tool is not installed in your system, please follow [these
 instructions](https://docs.conda.io/en/latest/miniconda.html) to install it.
 
-```warning
+```{warning}
 It is strongly recommended to use a computer with at least one GPU
 card, especially it you want to train your own model.
 ```
@@ -72,7 +72,7 @@ and installing inside `clinicadl` and of course `jupyter notebook`:
 conda create -y -n clinicadl_tuto python=3.7
 conda activate clinicadl_tuto
 pip install numpy==1.17 jupyterlab
-pip install clinicadl=0.0.2b2
+pip install clinicadl=0.0.2b4
 ```
 
 Then, you can clone the repository containing this tutorial and launch the notebooks once inside the repository:
