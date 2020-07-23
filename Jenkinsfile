@@ -26,8 +26,8 @@ pipeline {
                  conda activate clinicadl_course
                  pip install clinicadl==0.0.2b4
                  conda install jupyter
-                 pip install -U sphinx nbsphinx sphinx-click sphinx_tabs jupytext[myst]
-                 pip install -U jupyter-book==0.7.1
+                 pip install sphinx nbsphinx sphinx-click sphinx_tabs  myst-parser==0.9.1 jupytext[myst]
+                 pip install jupyter-book==0.7.1
                  conda deactivate
                  '''
             }
