@@ -4,6 +4,8 @@ sections:
 - header: Background
 - file: Notebooks-AD-DL/dataset
   title: Alzheimer's disease context
+- file: Notebooks-AD-DL/deep_learning
+  title: Deep learning basics
 
 - header: Hands-on tutorial
 - file: Notebooks-AD-DL/preprocessing
