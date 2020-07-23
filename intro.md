@@ -10,8 +10,8 @@ or validation procedure. Moreover, these studies are hardly reproducible
 because their frameworks are usually not publicly accessible and because
 implementation details are lacking. Lastly, some of these works may report a
 biased performance due to inadequate or unclear validation or model selection
-procedures.  In a recently published article [[Wen et al.
-2020](https://doi.org/10.1016/j.media.2020.101694)], we aimed to address these
+procedures.  In a recently published article ([Wen et al.
+2020](https://doi.org/10.1016/j.media.2020.101694)), we aimed to address these
 limitations by proposing an open-source framework for AD classification using
 convolutional neural networks and structural MRI.
 
@@ -24,9 +24,11 @@ on novel methods can easily replace a given part of the pipeline with their own
 solution (e.g. a classifier with a new architecture), and evaluate the added
 value of this specific new component over the baseline approach provided.
 The code of the framework is publicly available: general-purpose tools have
-been integrated into the Clinica software ([www.clinica.run](www.clinica.run))
+been integrated into the Clinica software [^mynote]
 and the framework-specific code is available at:
 [https://github.com/aramis-lab/AD-DL](https://github.com/aramis-lab/AD-DL).
+
+[^mynote]: [www.clinica.run](http://www.clinica.run)
 
 This tutorial will guide you through the steps necessary to carry out an
 analysis aiming to differentiate patients with Alzheimer's disease from healthy
@@ -81,19 +83,42 @@ card, especially if you want to train your own model.
 Once Conda is installed, a good practice consists in creating a new environment
 and installing inside `clinicadl` and of course `jupyter notebook`:
 
+```{admonition} Environment installation instructions
+:class: dropdown, tip
 ```bash
 conda create -y -n clinicadl_tuto python=3.7
 conda activate clinicadl_tuto
 pip install numpy==1.17 jupyterlab
 pip install clinicadl=0.0.2b4
 ```
+```
 
 Then, you can clone the repository containing this tutorial and launch the
 notebooks once inside the repository:
 
-```
+
+```{admonition} Cloning repository
+:class: dropdown, tip
+```bash
 git clone git@github.com:aramis-lab/MICCAI-educational-challenge-2020.git
 cd ./Notebooks-AD-DL
 jupyter notebook
 ```
+```
+
 For the preprocessing stage, you must install this software: [ANTs](http://stnava.github.io/ANTs/).
+
+### Running the notebooks in the Cloud
+
+Some of the notebooks here proposed can be launched in a Google Colab instance,
+by clicking on the icon on the upper side of the page.
+
+## Troubleshooting
+
+- If you are not able to exploit your GPU card, please reinstall Pytorch by
+  following instructions available in their
+  [webpage](https://pytorch.org/get-started/locally/).
+
+- Some instructions of these notebooks need access to the Internet, in order to
+  download templates, masks and models. Please verify that your internet
+  connection is available.
