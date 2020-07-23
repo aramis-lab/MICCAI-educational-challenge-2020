@@ -1,6 +1,6 @@
 # Deep learning classification from brain MRI: Application to Alzheimer's disease
 
-##Introduction
+## Introduction
 
 Numerous deep learning approaches have been proposed to classify neurological
 diseases, such as Alzheimer’s disease (AD), based on brain imaging data.
