@@ -25,7 +25,7 @@ html:
   baseurl: https://aramislab.paris.inria.fr/clinicadl/tuto/
 
 repository:
-  url: https://github.com/aramis-lab/MICCAI-educational-challenge-2020/
+  url: https://github.com/aramis-lab/Notebooks-AD-DL
   branch: master
 
 sphinx:
