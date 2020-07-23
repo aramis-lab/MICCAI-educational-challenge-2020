@@ -3,7 +3,7 @@ title: Deep learning classification from brain MRI
 sections:
 - header: Background
 - file: Notebooks-AD-DL/dataset
-  title: Clinical context: Alzheimer's disease
+  title: Clinical context - Alzheimer's disease
 - file: Notebooks-AD-DL/deep_learning
   title: Deep learning classification
 
