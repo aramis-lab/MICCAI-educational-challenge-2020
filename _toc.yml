@@ -1,18 +1,20 @@
 file: intro
-title: T1 MRI classification with deep learning
+title: Deep learning classification from brain MRI
 sections:
 - header: Background
 - file: Notebooks-AD-DL/dataset
-  title: Alzheimer's disease context
+  title: Clinical context: Alzheimer's disease
+- file: Notebooks-AD-DL/deep_learning
+  title: Deep learning classification
 
-- header: Hands-on tutorial
+- header: The basics
 - file: Notebooks-AD-DL/preprocessing
-  title: Dataset preprocessing
+  title: Prepare your neuroimaging data
 - file: Notebooks-AD-DL/inference
-  title: MRI classification using pretrained models
+  title: Perfom classification using pretrained models
 
 - header: Going further
 - file: Notebooks-AD-DL/label_extraction
-  title: Definition of the population of interest
+  title: Define your population
 - file: Notebooks-AD-DL/training
-  title: How to train your own model ?
+  title: Train your own models

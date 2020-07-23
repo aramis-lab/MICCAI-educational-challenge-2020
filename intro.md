@@ -1,5 +1,7 @@
 # Deep learning classification from brain MRI: Application to Alzheimer's disease
 
+##Introduction
+
 Numerous deep learning approaches have been proposed to classify neurological
 diseases, such as Alzheimer’s disease (AD), based on brain imaging data.
 However, classification performance is difficult to compare across studies due
@@ -11,20 +13,20 @@ biased performance due to inadequate or unclear validation or model selection
 procedures.  In a recently published article [[Wen et al.
 2020](https://doi.org/10.1016/j.media.2020.101694)], we aimed to address these
 limitations by proposing an open-source framework for AD classification using
-convolutional neural networks and structural MRI.  The framework comprises
-tools to automatically convert publicly available AD datasets into the BIDS
-standard, and a modular set of image preprocessing procedures, classification
-architectures and evaluation procedures dedicated to deep learning.  The
-proposed framework can be used to provide a baseline performance against which
-new methods can easily be compared. Researchers working on novel methods can
-easily replace a given part of the pipeline with their own solution (e.g. a
-classifier with a new architecture), and evaluate the added value of this
-specific new component over the baseline approach provided. All the code of the
-framework and the experiments is publicly available: general-purpose tools have
-been integrated into the Clinica software ([www.clinica.run](www.clinica.run)) 
-and the paper-specific code is available at:
-[https://github.com/aramis-lab/AD-DL](https://github.com/aramis-lab/AD-DL ).
+convolutional neural networks and structural MRI.
 
+The ClinicaDL framework comprises tools to automatically convert publicly
+available AD datasets into the BIDS standard, and a modular set of image
+preprocessing procedures, classification architectures and evaluation procedures
+dedicated to deep learning. This framework can be used to provide a baseline
+performance against which new methods can easily be compared. Researchers working
+on novel methods can easily replace a given part of the pipeline with their own
+solution (e.g. a classifier with a new architecture), and evaluate the added
+value of this specific new component over the baseline approach provided.
+The code of the framework is publicly available: general-purpose tools have
+been integrated into the Clinica software ([www.clinica.run](www.clinica.run))
+and the framework-specific code is available at:
+[https://github.com/aramis-lab/AD-DL](https://github.com/aramis-lab/AD-DL).
 
 This tutorial will guide you through the steps necessary to carry out an
 analysis aiming to differentiate patients with Alzheimer's disease from healthy
@@ -32,22 +34,30 @@ controls using structural MR images and convolutional neural networks. It will
 particularly highlight traps to avoid when carrying out this type of analysis.
 The tutorial will rely on [Clinica](http://www.clinica.run), a software
 platform for clinical neuroimaging studies, and
-[clinicadl](https://github.com/aramis-lab/ad-dl), a tool dedicated to the deep
-learning-based classification of AD using structural MRI.  Even though we will
+[ClinicaDL](https://github.com/aramis-lab/ad-dl), a tool dedicated to the deep
+learning-based classification of AD using structural MRI. Even though we will
 focus on Alzheimer's disease, the principles explained are general enough to be
 applicable to the analysis of other neurological diseases.
 
 The Jupyter Book is divided into the following sections:
 
-- [Clinical context: Alzheimer's disease](Notebooks-AD-DL/dataset).
+- Background
 
-- [Prepare your neuroimaging data](Notebooks-AD-DL/preprocessing).
+  - [Clinical context: Alzheimer's disease](Notebooks-AD-DL/dataset)
 
-- [Classify T1 MRI using precomputed CNN models and **clinicadl**](Notebooks-AD-DL/inference).
+  - [Deep learning classification](Notebooks-AD-DL/deep_learning)
 
-- [Defining the labels and validation procedures for classification](Notebooks-AD-DL/label_extraction).
+- The basics
 
-- [Train your own CNN models (optional)](Notebooks-AD-DL/training).
+  - [Prepare your neuroimaging data](Notebooks-AD-DL/preprocessing)
+
+  - [Perfom classification using pretrained models](Notebooks-AD-DL/inference)
+
+- Going further
+
+  - [Define your population](Notebooks-AD-DL/label_extraction)
+
+  - [Train your own models](Notebooks-AD-DL/training)
 
 
 ## Execution of the notebooks
@@ -86,3 +96,4 @@ git clone git@github.com:aramis-lab/MICCAI-educational-challenge-2020.git
 cd ./Notebooks-AD-DL
 jupyter notebook
 ```
+For the preprocessing stage, you must install this software: [ANTs](http://stnava.github.io/ANTs/).

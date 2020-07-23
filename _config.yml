@@ -1,13 +1,13 @@
 # Book settings
-title: MRI classification using Clinica
+title: Deep learning classification from brain MRI
 author: The Aramis Team
 logo: 'images/logo1.png'
-description: Tutoriel for MRI Classification using Clinica
+description: Tutorial for the deep learning classification from brain MRI
 
 launch_buttons:
   colab_url: "https://colab.research.google.com"
    # jupyterhub_url: "localhost:8080"  # The URL for your JupyterHub. (e.g., https://datahub.berkeley.edu)
-  
+
 ######################################################################################
 # Execution settings
 execute:
@@ -39,4 +39,4 @@ sphinx:
           "emat": ["\\end{array}\\right]"]
   extra_extensions:
     - sphinx_click.ext
-    - sphinx_tabs.tabs  
+    - sphinx_tabs.tabs
