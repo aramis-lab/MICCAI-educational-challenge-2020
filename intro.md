@@ -110,8 +110,11 @@ For the preprocessing stage, you must install this software: [ANTs](http://stnav
 
 ### Running the notebooks in the Cloud
 
-Some of the notebooks here proposed can be launched in a Google Colab instance,
-by clicking on the icon on the upper side of the page.
+Some of the notebooks can be launched in a Google Colab instance, by clicking
+on the icon in the upper side of the corresponding page. When launching the
+instace an initial step is proposed to set-up the notebook with the necessary
+software, this can take some time, particularly for the notebook "Prepare your
+neuroimaging data". Notebooks can be run indepedently. 
 
 ## Troubleshooting
 
