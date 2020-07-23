@@ -83,7 +83,7 @@ card, especially if you want to train your own model.
 Once Conda is installed, a good practice consists in creating a new environment
 and installing inside `clinicadl` and of course `jupyter notebook`:
 
-```{admonition} Environment installation instructions
+````{admonition} Environment installation instructions
 :class: dropdown, tip
 ```bash
 conda create -y -n clinicadl_tuto python=3.7
@@ -91,20 +91,20 @@ conda activate clinicadl_tuto
 pip install numpy==1.17 jupyterlab
 pip install clinicadl=0.0.2b4
 ```
-```
+````
 
 Then, you can clone the repository containing this tutorial and launch the
 notebooks once inside the repository:
 
 
-```{admonition} Cloning repository
+````{admonition} Cloning repository
 :class: dropdown, tip
 ```bash
 git clone git@github.com:aramis-lab/MICCAI-educational-challenge-2020.git
 cd ./Notebooks-AD-DL
 jupyter notebook
 ```
-```
+````
 
 For the preprocessing stage, you must install this software: [ANTs](http://stnava.github.io/ANTs/).
 
