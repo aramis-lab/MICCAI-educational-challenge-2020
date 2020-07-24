@@ -45,7 +45,7 @@ The Jupyter Book is divided into the following sections:
 
 - Background
 
-  - [Clinical context: Alzheimer's disease](Notebooks-AD-DL/dataset)
+  - [Clinical context: Alzheimer's disease](Notebooks-AD-DL/clinical)
 
   - [Deep learning classification](Notebooks-AD-DL/deep_learning)
 
