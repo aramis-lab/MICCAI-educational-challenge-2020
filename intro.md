@@ -15,7 +15,7 @@ procedures.  In a recently published article ([Wen et al.
 limitations by proposing an open-source framework for AD classification using
 convolutional neural networks and structural MRI.
 
-The ClinicaDL framework comprises tools to automatically convert publicly
+The `clinicadl` framework comprises tools to automatically convert publicly
 available AD datasets into the BIDS standard, and a modular set of image
 preprocessing procedures, classification architectures and evaluation procedures
 dedicated to deep learning. This framework can be used to provide a baseline
@@ -36,7 +36,7 @@ controls using structural MR images and convolutional neural networks. It will
 particularly highlight traps to avoid when carrying out this type of analysis.
 The tutorial will rely on [Clinica](http://www.clinica.run), a software
 platform for clinical neuroimaging studies, and
-[ClinicaDL](https://github.com/aramis-lab/ad-dl), a tool dedicated to the deep
+[`clinicadl`](https://github.com/aramis-lab/ad-dl), a tool dedicated to the deep
 learning-based classification of AD using structural MRI. Even though we will
 focus on Alzheimer's disease, the principles explained are general enough to be
 applicable to the analysis of other neurological diseases.
@@ -45,7 +45,7 @@ The Jupyter Book is divided into the following sections:
 
 - Background
 
-  - [Clinical context: Alzheimer's disease](Notebooks-AD-DL/dataset)
+  - [Clinical context: Alzheimer's disease](Notebooks-AD-DL/clinical)
 
   - [Deep learning classification](Notebooks-AD-DL/deep_learning)
 
