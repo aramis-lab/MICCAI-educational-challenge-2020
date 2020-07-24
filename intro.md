@@ -72,7 +72,8 @@ case, when available, links to instances of Google Colab are displayed.
 ### Run in the Cloud
 
 Interactive notebooks can be launched using a **Google Colab** instance. To do
-this, click on the icon in the upper side of the corresponding page. When
+this, click on the icon <i class="fa fa-rocket" aria-hidden="true"></i>
+ in the upper side of the corresponding page. When
 launching the **Colab**, an initial step is proposed to set-up the notebook
 with the necessary software, this can take some time, particularly for the
 notebook "Prepare your neuroimaging data". Notebooks can be run indepedently. 
