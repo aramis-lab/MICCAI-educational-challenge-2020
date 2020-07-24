@@ -17,7 +17,7 @@ execute:
 
 html:
   #favicon: images/favicon.ico
-  #google_analytics_id: UA-52617120-7
+  google_analytics_id: UA-173464732-1 
   home_page_in_navbar: false
   use_edit_page_button: true
   use_repository_button: true
