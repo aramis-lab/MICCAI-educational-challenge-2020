@@ -125,3 +125,5 @@ neuroimaging data". Notebooks can be run indepedently.
 - Some instructions of these notebooks need access to the Internet, in order to
   download templates, masks and models. Please verify that your internet
   connection is available.
+
+- You need help? [Post an issue](https://github.com/aramis-lab/MICCAI-educational-challenge-2020/issues) in our repository!
