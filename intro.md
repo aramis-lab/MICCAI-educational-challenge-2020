@@ -65,7 +65,7 @@ The Jupyter Book is divided into the following sections:
 ## Execution of the notebooks
 
 Each of the next sections can be downloaded as a notebook (a mix of text and
-code) that can be executed locally in your computer or run in a cloud instance
+code) that can be executed locally on your computer or run in a cloud instance
 (useful if you do not have a GPU available in your computer).  For the later
 case, when available, links to instances of Google Colab are displayed.
 
@@ -73,10 +73,10 @@ case, when available, links to instances of Google Colab are displayed.
 
 Interactive notebooks can be launched using a **Google Colab** instance. To do
 this, click on the icon <i class="fa fa-rocket" aria-hidden="true"></i>
- in the upper side of the corresponding page. When
+ in the upper right side of the corresponding page. When
 launching the **Colab**, an initial step is proposed to set-up the notebook
 with the necessary software, this can take some time, particularly for the
-notebook "Prepare your neuroimaging data". Notebooks can be run indepedently. 
+notebook "Prepare your neuroimaging data". Notebooks can be run independently.
 
 ### Local execution of the notebooks
 
