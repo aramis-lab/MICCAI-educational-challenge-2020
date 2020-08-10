@@ -106,7 +106,7 @@ Then, you can clone the repository containing this tutorial and launch the
 notebooks once inside the repository:
 
 
-````{admonition} Cloning repository
+````{admonition} Cloning the repository
 :class: dropdown, tip
 ```bash
 git clone git@github.com:aramis-lab/MICCAI-educational-challenge-2020.git
