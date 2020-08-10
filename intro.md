@@ -97,8 +97,8 @@ and installing inside `clinicadl` and of course `jupyter notebook`:
 ```bash
 conda create -y -n clinicadl_tuto python=3.7
 conda activate clinicadl_tuto
-pip install numpy==1.17 jupyterlab
-pip install clinicadl=0.0.2b4
+pip install jupyterlab
+pip install clinicadl=0.0.2
 ```
 ````
 
