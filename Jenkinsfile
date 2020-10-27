@@ -2,7 +2,15 @@
 
 // Continuous Integration script to build Jupyter-Book
 // Author: mauricio.diaz@inria.fr
-
+node {
+    checkout([
+        $class: 'GitSCM',
+        branches: scm.branches,
+        doGenerateSubmoduleConfigurations: true,
+        extensions: scm.extensions + [[$class: 'SubmoduleOption', parentCredentials: true]],
+        userRemoteConfigs: scm.userRemoteConfigs
+    ])
+}
 pipeline {
   agent none
     stages {
@@ -31,13 +39,6 @@ pipeline {
         }
       }
       stage('Build') {
-        checkout([
-            $class: 'GitSCM',
-            branches: scm.branches,
-            doGenerateSubmoduleConfigurations: true,
-            extensions: scm.extensions + [[$class: 'SubmoduleOption', parentCredentials: true]],
-            userRemoteConfigs: scm.userRemoteConfigs
-        ])
         agent { label 'linux && cpu' }
         environment {
           PATH = "$HOME/miniconda/bin:$PATH"
