@@ -21,7 +21,7 @@ pipeline {
               sh 'echo "Agent name: ${NODE_NAME}"'
               sh '''#!/usr/bin/env bash
                  set +x
-                 source $WORKSPACE/../../miniconda/etc/profile.d/conda.sh
+                 eval "$(conda shell.bash hook)"
                  conda create -y -n clinicadl_course python=3.7
                  conda activate clinicadl_course
                  pip install clinicadl==0.1.2
@@ -49,7 +49,7 @@ pipeline {
                  set +x
                  git submodule update --init --recursive
                  git pull --recurse-submodules
-                 source $WORKSPACE/../../miniconda/etc/profile.d/conda.sh
+                 eval "$(conda shell.bash hook)" 
                  conda activate clinicadl_course
                  jupyter-book build .
                  cp -r Notebooks-AD-DL/images _build/html/Notebooks-AD-DL/
@@ -88,7 +88,7 @@ pipeline {
       success {
         mattermostSend(
           color: "##A837C4",
-          message: "The tutorial has been updated, <https://aramislab.paris.inria.fr/clinicadl/tuto/intro.html|See here>"
+          message: "The tutorial has been updated, <https://aramislab.paris.inria.fr/clinicadl/tuto/intro.html|see here>"
         )
       }
       failure {
