@@ -9,7 +9,7 @@ pipeline {
       stage('Install') {
         parallel {
           stage('Clone Conda env') {
-            agent { label 'linux' }
+            agent { label 'linux && cpu' }
             environment {
                PATH = "$HOME/miniconda/bin:$PATH"
                }
@@ -37,7 +37,7 @@ pipeline {
       stage('Build') {
         parallel {
           stage('CLI test Linux') {
-            agent { label 'linux' }
+            agent { label 'linux && cpu' }
             environment {
               PATH = "$HOME/miniconda/bin:$PATH"
               GIT_SSH_COMMAND = 'ssh -i /builds/.ssh/github_idrsa'
@@ -65,7 +65,7 @@ pipeline {
       stage('Deploy') {
         parallel {
           stage('Deploy in webserver') {
-            agent { label 'linux' }
+            agent { label 'linux && cpu' }
             environment {
               PATH = "$HOME/miniconda/bin:$PATH"
               }
@@ -85,6 +85,12 @@ pipeline {
       }
     }
     post {
+      success {
+        mattermostSend(
+          color: "##A837C4",
+          message: "The tutorial has been updated, <https://aramislab.paris.inria.fr/clinicadl/tuto/intro.html|See here>"
+        )
+      }
       failure {
         mail to: 'clinicadl-ci@inria.fr',
           subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
