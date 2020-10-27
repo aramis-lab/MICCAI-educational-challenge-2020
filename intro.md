@@ -98,7 +98,7 @@ and installing inside `clinicadl` and of course `jupyter notebook`:
 conda create -y -n clinicadl_tuto python=3.7
 conda activate clinicadl_tuto
 pip install jupyterlab
-pip install clinicadl==0.0.3
+pip install clinicadl==0.1.2
 ```
 ````
 

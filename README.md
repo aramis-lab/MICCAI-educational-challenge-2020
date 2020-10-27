@@ -25,7 +25,7 @@ To run locally, please install the necessary packages inside a conda environment
 conda create -y -n clinicadl_tuto python=3.7
 conda activate clinicadl_tuto
 pip install jupyterlab
-pip install clinicadl==0.0.3
+pip install clinicadl==0.1.2
 ```
 
 Then, you can clone the repository containing this tutorial and lauch the

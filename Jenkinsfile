@@ -24,7 +24,7 @@ pipeline {
                  source $WORKSPACE/../../miniconda/etc/profile.d/conda.sh
                  conda create -y -n clinicadl_course python=3.7
                  conda activate clinicadl_course
-                 pip install clinicadl==0.0.3
+                 pip install clinicadl==0.1.2
                  conda install jupyter
                  pip install sphinx nbsphinx sphinx-click sphinx_tabs  myst-parser==0.9.1 jupytext[myst]
                  pip install jupyter-book==0.7.1
