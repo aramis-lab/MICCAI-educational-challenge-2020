@@ -97,8 +97,8 @@ and installing inside `clinicadl` and of course `jupyter notebook`:
 ```bash
 conda create -y -n clinicadl_tuto python=3.7
 conda activate clinicadl_tuto
-pip install numpy==1.17 jupyterlab
-pip install clinicadl=0.0.2b4
+pip install jupyterlab
+pip install clinicadl==0.1.2
 ```
 ````
 
@@ -106,7 +106,7 @@ Then, you can clone the repository containing this tutorial and launch the
 notebooks once inside the repository:
 
 
-````{admonition} Cloning repository
+````{admonition} Cloning the repository
 :class: dropdown, tip
 ```bash
 git clone git@github.com:aramis-lab/MICCAI-educational-challenge-2020.git
