@@ -1,3 +1,4 @@
 # Package to install to buil the document
 
 jupyter-book
+sphinxcontrib-bibtex==1.0.0
