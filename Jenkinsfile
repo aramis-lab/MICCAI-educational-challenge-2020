@@ -2,15 +2,6 @@
 
 // Continuous Integration script to build Jupyter-Book
 // Author: mauricio.diaz@inria.fr
-node {
-    checkout([
-        $class: 'GitSCM',
-        branches: scm.branches,
-        doGenerateSubmoduleConfigurations: true,
-        extensions: scm.extensions + [[$class: 'SubmoduleOption', parentCredentials: true]],
-        userRemoteConfigs: scm.userRemoteConfigs
-    ])
-}
 pipeline {
   agent none
     stages {
@@ -56,7 +47,7 @@ pipeline {
              jupyter-book build .
              cp -r Notebooks-AD-DL/images _build/html/Notebooks-AD-DL/
              cd _build/html/Notebooks-AD-DL
-             sed -i 's+github/aramis-lab/MICCAI-educational-challenge-2020/blob/master/Notebooks-AD-DL+github/aramis-lab/Notebooks-AD-DL/blob/master+g' *.html
+             sed -i 's+github/aramis-lab/MICCAI-educational-challenge-2020/blob/master/Notebooks-AD-DL+github/aramis-lab/Notebooks-AD-DL/blob/master+g' _build/html/notebooks/*.html
              conda deactivate
              '''
           stash(name: 'doc_html', includes: '_build/html/**')
