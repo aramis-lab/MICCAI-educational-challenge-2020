@@ -47,7 +47,7 @@ pipeline {
              jupyter-book build .
              cp -r Notebooks-AD-DL/images _build/html/Notebooks-AD-DL/
              cd _build/html/Notebooks-AD-DL
-             sed -i 's+github/aramis-lab/MICCAI-educational-challenge-2020/blob/master/Notebooks-AD-DL+github/aramis-lab/Notebooks-AD-DL/blob/master+g' _build/html/Notebooks-AD-DL/*.html
+             sed -i 's+github/aramis-lab/MICCAI-educational-challenge-2020/blob/master/Notebooks-AD-DL+github/aramis-lab/Notebooks-AD-DL/blob/master+g' ./*.html
              conda deactivate
              '''
           stash(name: 'doc_html', includes: '_build/html/**')
