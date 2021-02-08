@@ -21,10 +21,10 @@ pipeline {
              eval "$(conda shell.bash hook)"
              conda create -y -n clinicadl_course python=3.7
              conda activate clinicadl_course
-             pip install clinicadl==0.1.2
+             pip install clinicadl==0.2.0
              conda install jupyter
              pip install sphinx nbsphinx sphinx-click sphinx_tabs  myst-parser==0.9.1 jupytext[myst]
-             pip install jupyter-book==0.7.1
+             pip install -r requirements.txt
              conda deactivate
              '''
         }
