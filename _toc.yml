@@ -18,3 +18,5 @@ sections:
   title: Define your population
 - file: Notebooks-AD-DL/training
   title: Train your own models
+- file: Notebooks-AD-DL/generate
+  title: Generate new architectures

@@ -2,15 +2,6 @@
 
 // Continuous Integration script to build Jupyter-Book
 // Author: mauricio.diaz@inria.fr
-node {
-    checkout([
-        $class: 'GitSCM',
-        branches: scm.branches,
-        doGenerateSubmoduleConfigurations: true,
-        extensions: scm.extensions + [[$class: 'SubmoduleOption', parentCredentials: true]],
-        userRemoteConfigs: scm.userRemoteConfigs
-    ])
-}
 pipeline {
   agent none
     stages {
@@ -30,10 +21,10 @@ pipeline {
              eval "$(conda shell.bash hook)"
              conda create -y -n clinicadl_course python=3.7
              conda activate clinicadl_course
-             pip install clinicadl==0.1.2
+             pip install clinicadl==0.2.0
              conda install jupyter
              pip install sphinx nbsphinx sphinx-click sphinx_tabs  myst-parser==0.9.1 jupytext[myst]
-             pip install jupyter-book==0.7.1
+             pip install -r requirements.txt
              conda deactivate
              '''
         }
@@ -56,7 +47,7 @@ pipeline {
              jupyter-book build .
              cp -r Notebooks-AD-DL/images _build/html/Notebooks-AD-DL/
              cd _build/html/Notebooks-AD-DL
-             sed -i 's+github/aramis-lab/MICCAI-educational-challenge-2020/blob/master/Notebooks-AD-DL+github/aramis-lab/Notebooks-AD-DL/blob/master+g' *.html
+             sed -i 's+github/aramis-lab/MICCAI-educational-challenge-2020/blob/master/Notebooks-AD-DL+github/aramis-lab/Notebooks-AD-DL/blob/master+g' ./*.html
              conda deactivate
              '''
           stash(name: 'doc_html', includes: '_build/html/**')
