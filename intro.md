@@ -60,6 +60,8 @@ The Jupyter Book is divided into the following sections:
   - [Define your population](Notebooks-AD-DL/label_extraction)
 
   - [Train your own models](Notebooks-AD-DL/training)
+  
+  - [Debug architecture search](Notebooks-AD-DL/generate)
 
 
 ## Execution of the notebooks
