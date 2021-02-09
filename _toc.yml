@@ -19,4 +19,4 @@ sections:
 - file: Notebooks-AD-DL/training
   title: Train your own models
 - file: Notebooks-AD-DL/generate
-  title: Generate new architectures
+  title: Debug architecture search
