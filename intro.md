@@ -61,7 +61,7 @@ The Jupyter Book is divided into the following sections:
 
   - [Train your own models](Notebooks-AD-DL/training)
   
-  - [Interpret trained models](Notebooks-AD-DL/intepretability.ipynb)
+  - [Interpret trained models](Notebooks-AD-DL/interpretability.ipynb)
   
 - Architecture search
   
