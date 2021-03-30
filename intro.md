@@ -61,7 +61,13 @@ The Jupyter Book is divided into the following sections:
 
   - [Train your own models](Notebooks-AD-DL/training)
   
-  - [Debug architecture search](Notebooks-AD-DL/generate)
+  - [Interpret trained models](Notebooks-AD-DL/intepretability.ipynb)
+  
+- Architecture search
+  
+  - [Debug non-automated search](Notebooks-AD-DL/generate)
+  
+  - [Random search](Notebooks-AD-DL/random_search.ipynb)
 
 
 ## Execution of the notebooks

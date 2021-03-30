@@ -18,5 +18,11 @@ sections:
   title: Define your population
 - file: Notebooks-AD-DL/training
   title: Train your own models
+- file: Notebooks-AD-DL/interpretability
+  title: Interpret trained models
+
+- header: Architecture search
 - file: Notebooks-AD-DL/generate
-  title: Debug architecture search
+  title: Debug non-automated search
+- file: Notebooks-AD-DL/random_search
+  title: Random search
