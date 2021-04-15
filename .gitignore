@@ -2,3 +2,4 @@ _build/*
 _tmp/*
 
 images/*.pptx
+.idea/
