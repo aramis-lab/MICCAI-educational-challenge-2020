@@ -65,17 +65,17 @@ pipeline {
           sh '''#!/usr/bin/env bash
              set +x
              ls ./
-             scp -r _build/html aramislab.paris.inria.fr:~/jupyterbook/ 
+             scp -r _build/html aramislab.paris.inria.fr:~/clinicadl/tutoriel/2020/ 
              '''
           echo 'Finish uploading artifacts'   
         }
       }
     }
-    post {
+    /*post {
       success {
         mattermostSend(
           color: "##A837C4",
-          message: "The tutorial has been updated, <https://aramislab.paris.inria.fr/clinicadl/tuto/intro.html|see here>"
+          message: "The tutorial has been updated, <https://aramislab.paris.inria.fr/clinicadl/tuto|see here>"
         )
       }
       failure {
@@ -83,5 +83,5 @@ pipeline {
           subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
           body: "Something is wrong with ${env.BUILD_URL}"
       }
-    }
+    }*/
   }
